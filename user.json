@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Arun",
+        "email": "arun@gmail.com",
+        "pin": 1234,
+        "balance": 1000
+    },
+    {
+        "name": "naveen",
+        "email": "naviprasaad50@gmail.com",
+        "pin": 1234,
+        "balance": 4948
+    },
+    {
+        "name": "dhanyasri",
+        "email": "23am018@kpriet.ac.in",
+        "pin": 4567,
+        "balance": 2456
+    }
+]
