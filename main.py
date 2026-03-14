@@ -1,91 +1,139 @@
 from validators import Validators
 from Borrow import Borrower
 from user_management import UserManagement
+from Admin.Admin import Admin
 
-print("Library Management System")
+print("=" * 40)
+print("  Library Management System")
+print("=" * 40)
 
 while True:
 
-    print("\nMenu")
-    print("1.Create")
-    print("2.Login")
-    print("3.Exit")
+    print("\nMain Menu")
+    print("1. Register (Borrower)")
+    print("2. Login")
+    print("3. Exit")
 
-    choice = input("Enter your choice: ")
+    choice = input("Enter your choice: ").strip()
 
     if choice == "1":
 
         while True:
-            username = input("Enter your email: ")
-            email_validator = Validators()
-
-            if email_validator.email_validator(username):
+            username = input("Enter your email: ").strip()
+            if Validators.email_validator(username):
                 break
-            else:
-                print("Invalid Email")
 
-        password = input("Enter your password: ")
-
+        password = input("Enter your password: ").strip()
         user = Borrower(username, password)
         user.create_user()
 
     elif choice == "2":
 
         while True:
-            username = input("Enter your email: ")
-            email_validator = Validators()
-
-            if email_validator.email_validator(username):
+            username = input("Enter your email: ").strip()
+            if Validators.email_validator(username):
                 break
-            else:
-                print("Invalid Email")
 
-        password = input("Enter your password: ")
-
+        password = input("Enter your password: ").strip()
         login_user = Borrower.login(username, password)
 
         if login_user is None:
             print("Login Failed")
             continue
 
-        print("Login Successful")
-
         current_user = login_user["user_id"]
+        is_admin = login_user["admin"]
 
-        user_obj = UserManagement(current_user)
+        if is_admin:
+            admin_obj = Admin(current_user)
+            print(f"\nWelcome, Admin!")
 
-        while True:
+            while True:
+                admin_choice = Admin.admin_choice()
 
-            user_choice = UserManagement.user_choice()
+                if admin_choice == "1":
+                    admin_obj.add_book()
 
-            if user_choice == "1":
-                user_obj.view_books()
+                elif admin_choice == "2":
+                    admin_obj.remove_book()
 
-            elif user_choice == "2" or user_choice == "3":
+                elif admin_choice == "3":
+                    admin_obj.modify_book()
 
-                book_id = int(input("Enter Book ID: "))
+                elif admin_choice == "4":
+                    admin_obj.list_books()
 
-                book = {"book_id": book_id}
+                elif admin_choice == "5":
+                    admin_obj.search_book()
 
-                user_obj.add_book(current_user, book)
+                elif admin_choice == "6":
+                    admin_obj.add_borrower()
 
-            elif user_choice == "4":
+                elif admin_choice == "7":
+                    admin_obj.add_admin()
 
-                book_id = int(input("Enter Book ID to return: "))
-                user_obj.return_book(current_user, book_id)
+                elif admin_choice == "8":
+                    admin_obj.promote_to_admin()
 
-            elif user_choice == "5":
+                elif admin_choice == "9":
+                    admin_obj.manage_fine_limit()
 
-                print("Logging out...")
-                break
+                elif admin_choice == "10":
+                    admin_obj.view_all_borrowers()
 
-            else:
-                print("Invalid Choice")
+                elif admin_choice == "11":
+                    admin_obj.reports_menu()
+
+                elif admin_choice == "12":
+                    print("Logging out...")
+                    break
+
+                else:
+                    print("Invalid Choice")
+
+        else:
+            user_obj = UserManagement(current_user)
+            print(f"\nWelcome, {username}!")
+
+            while True:
+                user_choice = UserManagement.user_choice()
+
+                if user_choice == "1":
+                    user_obj.view_books()
+
+                elif user_choice == "2":
+                    user_obj.search_book()
+
+                elif user_choice == "3":
+                    user_obj.view_books()
+                    try:
+                        book_id = int(input("Enter Book ID to checkout: "))
+                        user_obj.add_book(current_user, {"book_id": book_id})
+                    except ValueError:
+                        print("Invalid Book ID")
+
+                elif user_choice == "4":
+                    user_obj.view_my_books(current_user)
+
+                elif user_choice == "5":
+                    user_obj.manage_book(current_user)
+
+                elif user_choice == "6":
+                    user_obj.view_history(current_user)
+
+                elif user_choice == "7":
+                    user_obj.report_card_lost(current_user)
+
+                elif user_choice == "8":
+                    print("Logging out...")
+                    break
+
+                else:
+                    print("Invalid Choice")
 
     elif choice == "3":
-        print("Exiting Library Management System")
+        print("Exiting Library Management System. Goodbye!")
         break
 
     else:
         print("Invalid Choice")
-

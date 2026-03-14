@@ -1,6 +1,6 @@
 data.json
+checkout.json
+books.json
 __pycache__/
 
 .idea
-checkout.json
-books.json

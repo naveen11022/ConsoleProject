@@ -9,10 +9,10 @@
                 "book_checkout_date": "2026-03-13"
             },
             {
-                "book_id": 106,
-                "due_date": "2026-03-27",
-                "return_date": "2026-03-13",
-                "book_checkout_date": "2026-03-13"
+                "book_id": 112,
+                "due_date": "2026-03-28",
+                "return_date": "",
+                "book_checkout_date": "2026-03-14"
             }
         ]
     }

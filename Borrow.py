@@ -14,15 +14,17 @@ class Borrower:
 
     def todict(self):
         return {
-            "id": str(uuid.uuid4()),
+            "user_id": str(uuid.uuid4()),
             "username": self.username,
             "password": self.password,
             "admin": self.admin,
-            "deposit": self.deposit
+            "deposit": self.deposit,
+            "fine_limit": 500,
+            "borrow_history": [],
+            "fine_history": []
         }
 
     def create_user(self):
-
         try:
             with open(FILE, "r") as f:
                 data = json.load(f)
@@ -42,8 +44,20 @@ class Borrower:
         print("Account created successfully.")
 
     @staticmethod
-    def login(username, password):
+    def load_users():
+        try:
+            with open(FILE, "r") as f:
+                return json.load(f)
+        except:
+            return []
 
+    @staticmethod
+    def save_users(data):
+        with open(FILE, "w") as f:
+            json.dump(data, f, indent=4)
+
+    @staticmethod
+    def login(username, password):
         try:
             with open(FILE, "r") as f:
                 data = json.load(f)
@@ -51,9 +65,9 @@ class Borrower:
             for user in data:
                 if user["username"] == username and user["password"] == password:
                     print("Login successful.")
-                    return {"admin": user["admin"], "user_id": user["id"]}
+                    return {"admin": user["admin"], "user_id": user["user_id"]}
 
-            print("User does not exist")
+            print("Invalid credentials")
             return None
 
         except:

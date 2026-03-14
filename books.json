@@ -5,7 +5,9 @@
         "ISBN": "9780134853987",
         "authorname": "Guido van Rossum",
         "DOP": "2016-05-10",
-        "quantity": 10
+        "quantity": 10,
+        "cost": 450,
+        "borrow_count": 0
     },
     {
         "bookid": 102,
@@ -13,7 +15,9 @@
         "ISBN": "9781449355739",
         "authorname": "Mark Lutz",
         "DOP": "2013-06-12",
-        "quantity": 7
+        "quantity": 7,
+        "cost": 600,
+        "borrow_count": 0
     },
     {
         "bookid": 103,
@@ -21,7 +25,9 @@
         "ISBN": "9781593275990",
         "authorname": "Al Sweigart",
         "DOP": "2015-04-14",
-        "quantity": 12
+        "quantity": 12,
+        "cost": 500,
+        "borrow_count": 0
     },
     {
         "bookid": 104,
@@ -29,7 +35,9 @@
         "ISBN": "9780132350884",
         "authorname": "Robert C. Martin",
         "DOP": "2008-08-01",
-        "quantity": 5
+        "quantity": 5,
+        "cost": 700,
+        "borrow_count": 0
     },
     {
         "bookid": 105,
@@ -37,7 +45,9 @@
         "ISBN": "9780201616224",
         "authorname": "Andrew Hunt",
         "DOP": "1999-10-30",
-        "quantity": 6
+        "quantity": 6,
+        "cost": 650,
+        "borrow_count": 0
     },
     {
         "bookid": 106,
@@ -45,7 +55,9 @@
         "ISBN": "9780262033848",
         "authorname": "Thomas H. Cormen",
         "DOP": "2009-07-31",
-        "quantity": 4
+        "quantity": 5,
+        "cost": 900,
+        "borrow_count": 0
     },
     {
         "bookid": 107,
@@ -53,7 +65,9 @@
         "ISBN": "9781118290279",
         "authorname": "Michael T. Goodrich",
         "DOP": "2013-03-18",
-        "quantity": 8
+        "quantity": 8,
+        "cost": 750,
+        "borrow_count": 0
     },
     {
         "bookid": 108,
@@ -61,7 +75,9 @@
         "ISBN": "9781491946008",
         "authorname": "Luciano Ramalho",
         "DOP": "2015-07-30",
-        "quantity": 6
+        "quantity": 6,
+        "cost": 800,
+        "borrow_count": 0
     },
     {
         "bookid": 109,
@@ -69,7 +85,9 @@
         "ISBN": "9781593276034",
         "authorname": "Eric Matthes",
         "DOP": "2016-11-01",
-        "quantity": 9
+        "quantity": 9,
+        "cost": 400,
+        "borrow_count": 0
     },
     {
         "bookid": 110,
@@ -77,7 +95,9 @@
         "ISBN": "9781449382674",
         "authorname": "Paul Barry",
         "DOP": "2016-12-16",
-        "quantity": 7
+        "quantity": 7,
+        "cost": 550,
+        "borrow_count": 0
     },
     {
         "bookid": 111,
@@ -85,7 +105,9 @@
         "ISBN": "9780262035613",
         "authorname": "Ian Goodfellow",
         "DOP": "2016-11-18",
-        "quantity": 5
+        "quantity": 5,
+        "cost": 1200,
+        "borrow_count": 0
     },
     {
         "bookid": 112,
@@ -93,7 +115,9 @@
         "ISBN": "9780134610993",
         "authorname": "Stuart Russell",
         "DOP": "2020-04-28",
-        "quantity": 4
+        "quantity": 3,
+        "cost": 1100,
+        "borrow_count": 0
     },
     {
         "bookid": 113,
@@ -101,7 +125,9 @@
         "ISBN": "9780073523323",
         "authorname": "Abraham Silberschatz",
         "DOP": "2019-01-01",
-        "quantity": 6
+        "quantity": 6,
+        "cost": 850,
+        "borrow_count": 0
     },
     {
         "bookid": 114,
@@ -109,7 +135,9 @@
         "ISBN": "9780133594140",
         "authorname": "James F. Kurose",
         "DOP": "2016-03-10",
-        "quantity": 4
+        "quantity": 4,
+        "cost": 780,
+        "borrow_count": 0
     },
     {
         "bookid": 115,
@@ -117,6 +145,8 @@
         "ISBN": "9781118063330",
         "authorname": "Abraham Silberschatz",
         "DOP": "2018-01-01",
-        "quantity": 6
+        "quantity": 6,
+        "cost": 820,
+        "borrow_count": 0
     }
 ]
