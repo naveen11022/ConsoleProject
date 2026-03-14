@@ -1,0 +1,19 @@
+[
+    {
+        "user_id": "b49627b9-0569-4ce6-a8dc-af1962be64b5",
+        "checkout_details": [
+            {
+                "book_id": 114,
+                "due_date": "2026-03-13",
+                "return_date": "",
+                "book_checkout_date": "2026-03-13"
+            },
+            {
+                "book_id": 106,
+                "due_date": "2026-03-27",
+                "return_date": "2026-03-13",
+                "book_checkout_date": "2026-03-13"
+            }
+        ]
+    }
+]

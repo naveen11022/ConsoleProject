@@ -2,3 +2,5 @@ data.json
 __pycache__/
 
 .idea
+checkout.json
+books.json

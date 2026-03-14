@@ -1,0 +1,122 @@
+[
+    {
+        "bookid": 101,
+        "name": "Python Basics",
+        "ISBN": "9780134853987",
+        "authorname": "Guido van Rossum",
+        "DOP": "2016-05-10",
+        "quantity": 10
+    },
+    {
+        "bookid": 102,
+        "name": "Learning Python",
+        "ISBN": "9781449355739",
+        "authorname": "Mark Lutz",
+        "DOP": "2013-06-12",
+        "quantity": 7
+    },
+    {
+        "bookid": 103,
+        "name": "Automate the Boring Stuff with Python",
+        "ISBN": "9781593275990",
+        "authorname": "Al Sweigart",
+        "DOP": "2015-04-14",
+        "quantity": 12
+    },
+    {
+        "bookid": 104,
+        "name": "Clean Code",
+        "ISBN": "9780132350884",
+        "authorname": "Robert C. Martin",
+        "DOP": "2008-08-01",
+        "quantity": 5
+    },
+    {
+        "bookid": 105,
+        "name": "The Pragmatic Programmer",
+        "ISBN": "9780201616224",
+        "authorname": "Andrew Hunt",
+        "DOP": "1999-10-30",
+        "quantity": 6
+    },
+    {
+        "bookid": 106,
+        "name": "Introduction to Algorithms",
+        "ISBN": "9780262033848",
+        "authorname": "Thomas H. Cormen",
+        "DOP": "2009-07-31",
+        "quantity": 4
+    },
+    {
+        "bookid": 107,
+        "name": "Data Structures and Algorithms in Python",
+        "ISBN": "9781118290279",
+        "authorname": "Michael T. Goodrich",
+        "DOP": "2013-03-18",
+        "quantity": 8
+    },
+    {
+        "bookid": 108,
+        "name": "Fluent Python",
+        "ISBN": "9781491946008",
+        "authorname": "Luciano Ramalho",
+        "DOP": "2015-07-30",
+        "quantity": 6
+    },
+    {
+        "bookid": 109,
+        "name": "Python Crash Course",
+        "ISBN": "9781593276034",
+        "authorname": "Eric Matthes",
+        "DOP": "2016-11-01",
+        "quantity": 9
+    },
+    {
+        "bookid": 110,
+        "name": "Head First Python",
+        "ISBN": "9781449382674",
+        "authorname": "Paul Barry",
+        "DOP": "2016-12-16",
+        "quantity": 7
+    },
+    {
+        "bookid": 111,
+        "name": "Deep Learning",
+        "ISBN": "9780262035613",
+        "authorname": "Ian Goodfellow",
+        "DOP": "2016-11-18",
+        "quantity": 5
+    },
+    {
+        "bookid": 112,
+        "name": "Artificial Intelligence: A Modern Approach",
+        "ISBN": "9780134610993",
+        "authorname": "Stuart Russell",
+        "DOP": "2020-04-28",
+        "quantity": 4
+    },
+    {
+        "bookid": 113,
+        "name": "Database System Concepts",
+        "ISBN": "9780073523323",
+        "authorname": "Abraham Silberschatz",
+        "DOP": "2019-01-01",
+        "quantity": 6
+    },
+    {
+        "bookid": 114,
+        "name": "Computer Networking: A Top-Down Approach",
+        "ISBN": "9780133594140",
+        "authorname": "James F. Kurose",
+        "DOP": "2016-03-10",
+        "quantity": 4
+    },
+    {
+        "bookid": 115,
+        "name": "Operating System Concepts",
+        "ISBN": "9781118063330",
+        "authorname": "Abraham Silberschatz",
+        "DOP": "2018-01-01",
+        "quantity": 6
+    }
+]

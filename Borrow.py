@@ -51,7 +51,7 @@ class Borrower:
             for user in data:
                 if user["username"] == username and user["password"] == password:
                     print("Login successful.")
-                    return {"admin": user["admin"], "user_id": user["user_id"]}
+                    return {"admin": user["admin"], "user_id": user["id"]}
 
             print("User does not exist")
             return None
