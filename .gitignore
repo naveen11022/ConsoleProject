@@ -1,6 +1,4 @@
-data.json
-checkout.json
-books.json
+*.json
 __pycache__/
 
 .idea
